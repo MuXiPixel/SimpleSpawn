@@ -1,0 +1,20 @@
+name: SimpleSpawn
+main: me.yourname.spawn.SimpleSpawn
+version: 1.1
+author: YourName
+description: 增强版出生点传送插件
+api-version: 1.8
+
+commands:
+  spawn:
+    description: 传送自己或指定玩家到出生点
+    usage: /spawn [玩家名]
+    permission: simplespawn.use
+
+permissions:
+  simplespawn.use:
+    description: 允许使用/spawn命令
+    default: true
+  simplespawn.teleport.others:
+    description: 允许传送其他玩家
+    default: op
